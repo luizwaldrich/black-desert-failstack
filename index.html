@@ -1,0 +1,37 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+    <title>Black Desert: +14 Reblath FailStack Simulator</title>
+  </head>
+  <body style="max-width: 800px; margin: 0 auto">
+    <div align="center">
+      <div style="float:left">
+        <h1>Black Desert Online</h1>
+        <h2 id="title">+14 Reblath FailStack Simulator</h2>
+      </div>
+      <div id="language" align="right">
+          <img src="img/en.png" title="English" onclick="toEnglish()" width="60px"/>
+          <img src="img/pt-br.png" title="Português"  onclick="toPortuguese()" width="60px"/>
+      </div>
+    </div>
+    <div class="jumbotron" style="clear:both">
+        <h1 id="chance" class="display-4">2%</h1> 
+        <h2 id="status">Waiting...</h2>
+        <h3><span id="failed-label">Failed</span>: <span id="falhas">0</span></h3>
+        <button id="btnEnhance" onclick="simulate()" class="btn btn-primary">Enhance</button>
+        <button id="btnNewItem" onclick="reset()" class="btn btn-warning">New Item</button> 
+        <button id="btnReset" onclick="resetResources()" class="btn btn-danger">Reset</button> 
+        <h3 style="margin-top:15px"><span id="recurso">0</span> <img src="img/black-stone.png" width="25px" height="25px" style="margin-bottom: 4px"/></h3>
+    </div>
+
+    <!-- JavaScript -->
+    <script src="js/failstack.js"></script>
+  </body>
+</html>
